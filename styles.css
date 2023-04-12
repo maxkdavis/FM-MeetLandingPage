@@ -1,0 +1,110 @@
+/* Global Rest and Box-Sizing Rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Set Body defaults */
+body {
+  background-color: #f2f2f2;
+  min-height: 100vh;
+  padding-top: 80px;
+  font-family: 'Red Hat Display', sans-serif;
+  display: flex;
+  place-content: center;
+}
+
+/* Make images easier to work with */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Inherit fonts fonts for inputs and buttons */
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+/* CLASS SELECTORS */
+.container {
+  background-color: white;
+  max-width: 1440px;
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+}
+
+.logo-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3.8rem; /*~60p*/
+}
+
+.header-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 4rem;
+  margin-bottom: 6.875rem; /*110px*/
+  overflow: hidden;
+}
+
+.header {
+  width: 500px;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.main-heading-title {
+  color: hsla(239, 21%, 20%, 1);
+  font-size: 3.5rem;
+  line-height: 4rem;
+  padding: 2rem 4rem 0;
+  margin-bottom: 2rem;
+}
+
+.main-heading-text {
+  color: hsla(239, 10%, 57%, 1);
+  font-size: 1rem;
+  line-height: 1rem;
+  margin-bottom: 3rem;
+  padding: 0 1rem;
+}
+
+.img-hero-left {
+  transform: translate(-30px, 0);
+}
+
+.img-hero-right {
+  transform: translate(30px, 0);
+}
+
+.btn-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 1rem 2.5rem;
+  border-radius: 80px;
+  border: none;
+  color: #fff;
+  font-weight: 900;
+}
+
+.download {
+  background-color: #4d96a9;
+}
+
+.info {
+  background-color: #855fb1;
+}
